@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Rakhi Animation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="viewport">
+    <div id="scene" class="scene">
+
+      <div id="stage-mail" class="stage stage-mail">
+        <img id="envelope" class="sprite pixelated clickable" src="imgs\mail-removebg-preview.png" alt="envelope" />
+        <div class="pixel-text small" id="mail-text">You've got mail</div>
+      </div>
+
+      <div id="stage-start" class="stage stage-start hidden">
+        <img id="envelope-open" class="sprite pixelated hidden" src="imgs/open_mail-removebg-preview.png" alt="envelope open" />
+        <div id="start-wrapper" class="start-wrapper hidden">
+          <img id="start-btn" class="sprite pixelated clickable" src="imgs/start-Photoroom.png" alt="start" />
+          <div class="arrow-hint" id="arrow-hint">➤</div>
+        </div>
+      </div>
+
+      <div id="stage-gift" class="stage stage-gift hidden">
+        <img id="base"     class="sprite pixelated gift-layer hidden" data-layer="base"   src="imgs/boxlow-removebg-preview.png"   alt="base" />
+        <img id="lid"      class="sprite pixelated gift-layer hidden" data-layer="lid"    src="imgs/lid-removebg-preview.png"    alt="lid" />
+        <img id="ribbon1"  class="sprite pixelated gift-layer hidden" data-layer="r1"     src="imgs/ribbon_1-removebg-preview.png" alt="ribbon1" />
+        <img id="ribbon2"  class="sprite pixelated gift-layer hidden" data-layer="r2"     src="imgs/ribbon2-removebg-preview.png" alt="ribbon2" />
+        <img id="bow"      class="sprite pixelated clickable gift-layer hidden" data-layer="bow"     src="imgs/bow-Photoroom.png"    alt="bow" />
+      </div>
+
+      <div id="stage-raakhi" class="stage stage-raakhi hidden">
+        <div class="pixel-text large hidden" id="final-text">HAPPY RAKSHABANDHAN</div>
+        <img id="raakhi" class="sprite pixelated hidden" src="imgs/raakhifull-removebg-preview.png" alt="raakhi" />
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
